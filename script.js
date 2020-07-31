@@ -6,6 +6,7 @@ let qOpt4 = document.getElementById("4");
 // ^^indicates what each qOpt should reference, either right or wrong
 let qOptions = document.getElementById("qOptions");
 let qContain = document.getElementById("qContain");
+let answer = "";
 
 //Time
 let counter = document.getElementById("count");
