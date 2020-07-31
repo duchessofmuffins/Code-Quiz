@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap extension -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Score-->
+  <div class="container">
+      <div class="row">
+          <div id="scoreLink" class="col-3">
+              <button id="scoreBtn">View Scores</button>
+          </div><!--"scoreLink"-->
+            <div class="col-6">
+            </div><!--"col-6 buffer"-->
+                <!--Time Left-->
+                 <div id="timer" class="col-3 hide">
+                    <p>Time Left: <span id="count">70</span></p>
+                 </div><!--"timeLeft"-->
+        </div><!--"row"-->
+  </div><!--"container"-->
+
+
+<!--Start-->
+<div class="container">
+    <div class="row">
+      <div class="col-3">
+      </div><!--"col-3 buffer"-->
+          <div id="info" class="col-6 show">
+              <h1>Coding Quiz</h2>
+                  <h5>Test your coding knowledge by taking this timed quiz on basic coding info. Make sure to choose quickly and wisely! Every wrong answer will cost you 10 seconds.  Good luck!</h5>
+                <p></p>
+                <button id="startBtn" class="show">Start Quiz</button>
+                </div><!--"info"-->
+      <div class="col-3">
+      </div><!--"col-3 buffer"-->
+    </div> <!--"row"-->
+</div><!--"container"-->
+
+<!--Questions-->
+  <div class="container">
+      <div class="row">
+          <div class="col-3">
+          </div><!--"col-3 buffer"-->
+          <div id="qContain" class="col-6 hide">
+            <h3 id="q">Question</h3>
+          </div>
+          <div class="col-3">
+          </div><!--"col-3 buffer"-->
+      </div><!--"row"-->
+  </div><!--"container"-->
+
+    <!--QButtons-->
+     <div class="row">
+        <div class="col-3">
+        </div><!--"col-3 buffer"-->
+            <div id="qOptions" class="col-6 hide">
+                <button id="1" class="qOpt" onclick="checkAnswer('1')">Btn1</button>
+                <button id="2" class="qOpt" onclick="checkAnswer('2')">Btn2</button>
+                <button id="3" class="qOpt" onclick="checkAnswer('3')">Btn3</button>
+                <button id="4" class="qOpt" onclick="checkAnswer('4')">Btn4</button>
+            </div><!--"QOptions"-->
+        <div class="col-3">
+        </div><!--"col-3 buffer"-->
+     </div><!--"row"-->
+
+  <!--End-->
+  <div class="container">
+      <div class="row">
+          <div class="col-3">
+          </div>
+            <div id="end" class="col-6 hide">
+                <h4>"You Did It!"</h4>
+                    <p>Enter your initials here for your highscore!</p>
+                        <form>
+                            <input type="text" id="initials" name="initials">
+                            <input type="submit" id="initialsBtn">
+                        </form>
+                    <p>Score: <span id="finScore">50</span></p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <button id="backBtn">Back</button>
+                            </div><!--"col"-->
+                        </div><!--"row"-->
+                    </div><!--"container"-->
+            </div><!--"End"-->
+          <div class="col-3">
+          </div><!--"col-3 buffer"-->
+      </div><!--"row"-->
+  </div><!--"container"-->
+
+<!--High Scores-->
+ <div id="highScoreContainer" class="container hide">
+    <div class="row">
+        <div class="col">
+            <h4>High Scores</h4>
+            <ul id="scoresList">
+            </ul>
+            
+            <div class="col">
+                <button id="returnToStartBtn">Home</button>
+            </div><!--"col"-->
+        </div><!--"col"-->
+    </div><!--"row"-->
+ </div><!--"container"-->
+
+ <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: darkgreen;
+  }
+  
+  button {
+    width: 80%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
