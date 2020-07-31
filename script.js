@@ -228,7 +228,7 @@ function returnToStart() {
 }
 }
 
-startBtn.addEventListener("click", beginQuiz);
+startBtn.addEventListener("click", beginQuiz());
 
 ScoreBtn.addEventListener("click", viewHighScore);
 
